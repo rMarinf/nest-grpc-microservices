@@ -1,0 +1,18 @@
+version: '3'
+services:
+  gateway:
+    build:
+      context: .
+      dockerfile: ./apps/gateway/Dockerfile
+    container_name: "gateway"
+    links:
+      - users
+    ports:
+      - '3000:3000'
+  users:
+    build:
+      context: .
+      dockerfile: ./apps/users/Dockerfile
+    container_name: "users"
+    ports:
+      - '3001:3000'
