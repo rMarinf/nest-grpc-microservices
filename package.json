@@ -22,10 +22,12 @@
     "test:e2e": "jest --config apps/gateway/test/jest-e2e.json"
   },
   "dependencies": {
+    "@grpc/proto-loader": "^0.5.2",
     "@nestjs/common": "^6.8.0",
     "@nestjs/core": "^6.8.0",
     "@nestjs/microservices": "^6.8.0",
     "@nestjs/platform-express": "^6.8.0",
+    "grpc": "^1.24.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^3.0.0",
     "rxjs": "^6.3.3"
