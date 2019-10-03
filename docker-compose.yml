@@ -15,4 +15,4 @@ services:
       dockerfile: ./apps/users/Dockerfile
     container_name: "users"
     ports:
-      - '3001:3000'
+      - '5000:5000'

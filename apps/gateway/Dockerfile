@@ -35,6 +35,8 @@ WORKDIR /home/app
 
 COPY --from=builder /home/app/package*.json /home/app/
 COPY --from=builder /home/app/dist/gateway /home/app/dist/gateway
+COPY --from=builder /home/app/dist/shared /home/app/dist/shared
+COPY --from=builder /home/app/protos /home/app/protos
 
 RUN npm install
 
