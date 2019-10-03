@@ -4,7 +4,7 @@ import { UserById } from './interfaces/userById.interface';
 import { User } from './interfaces/User.interface';
 
 @Controller()
-export class UserController {
+export class UserService {
 
   @GrpcMethod('UserService', 'FindOne')
   findOne(data: UserById, metadata: any): User {

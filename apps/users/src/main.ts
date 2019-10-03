@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { Transport } from '@nestjs/microservices';
-import { UserMicroserviceOptions } from './grpc.options';
+import { UserMicroserviceOptions } from '../../shared/configuration/user.grpc.options';
 
 async function bootstrap() {
   const app = await NestFactory.createMicroservice(AppModule, {
